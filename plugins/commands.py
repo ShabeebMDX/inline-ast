@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('🔎 Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('Group 🍥', url='https://t.me/astor_movies')
+                        InlineKeyboardButton('🍿 Group', url='https://t.me/astor_movies')
                     ]
                     ]
                 await bot.send_cached_media(
