@@ -30,7 +30,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("🧩 Join Updates Channel 🧩", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -91,7 +91,7 @@ async def filter(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="NEXT ⟹",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
@@ -154,7 +154,7 @@ async def group(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="NEXT ⟹",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"📃 Pages 1/{data['total']}",callback_data="pages")]
@@ -207,7 +207,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⟸ BACK", callback_data=f"back_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -221,7 +221,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⟸ BACK", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⟹", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -245,7 +245,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("NEXT ⟹", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
@@ -259,7 +259,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("⟸ BACK", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⟹", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
@@ -297,8 +297,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('Modded 🛠', url='https://t.me/solo_minded'),
+                        InlineKeyboardButton('🧩 Update Channel 🧩', url='https://t.me/astormovies')
                     ]
                     ]
                 
@@ -329,8 +329,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/subin_works')
+                        InlineKeyboardButton('Group 🍥', url='https://t.me/astor_movies'),
+                        InlineKeyboardButton('🧩 Update Channel 🧩', url='https://t.me/subin_works')
                     ]
                     ]
                 
