@@ -272,7 +272,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('🧩 Update Channel 🧩', url='https://t.me/astormovies'),
+                    InlineKeyboardButton('🧩 Channel', url='https://t.me/astormovies'),
                     InlineKeyboardButton('🍿 Group', url='https://t.me/astor_movies')
                 ]
                 ]
@@ -298,7 +298,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('Modded 🛠', url='https://t.me/solo_minded'),
-                        InlineKeyboardButton('🧩 Update Channel 🧩', url='https://t.me/astormovies')
+                        InlineKeyboardButton('🧩 Channel', url='https://t.me/astormovies')
                     ]
                     ]
                 
@@ -330,7 +330,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('🍿 Group', url='https://t.me/astor_movies'),
-                        InlineKeyboardButton('🧩 Update Channel 🧩', url='https://t.me/astormovies')
+                        InlineKeyboardButton('🧩 Channel', url='https://t.me/astormovies')
                     ]
                     ]
                 
